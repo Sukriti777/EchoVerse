@@ -45,6 +45,9 @@ const userSchema=new mongoose.Schema({
     select:false, //for password invisibilily
     minLength:8
   },
+  token:{
+    type:String,
+  },
   createdAt:{
     type:Date,
     default:Date.now,
